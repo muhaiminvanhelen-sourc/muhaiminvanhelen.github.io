@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Personal Web</title>
+</head>
+<body>
+    <!-- Opening Screen -->
+    <div class="intro" id="intro">
+
+        <div class="intro-content">
+
+            <h1 id="welcome">HI</h1>
+
+            <h2 id="name">I'm Mimin</h2>
+
+            <p id="description">
+                I Build > I Code > I Play
+            </p>
+            <br>
+
+            <a href="index2.html" class="button" id="enterBtn">ENTER</a>
+            <div id="transition"></div>
+        </div>
+
+    </div>
+
+
+    <!-- Main Website -->
+    <main id="main-content">
+
+        <h1>MY PERSONAL WEBSITE</h1>
+
+        <p>
+            Selamat datang di website pribadi gua.
+        </p>
+
+    </main>
+
+    <!-- MENU UTAMA -->
+    <section class="home" id="home">
+
+        <nav>
+            <h2>MINIMIN.</h2>
+
+            <div class="menu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <h1>WELCOME TO<br>MY WORLD.</h1>
+
+            <p>
+                Coding, music, guitar, and everything I create.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- Musik -->
+    <audio id="bgMusic" loop>
+        <source src="Mobo.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        const button = document.getElementById("enterBtn");
+        const music = document.getElementById("bgMusic");
+
+        button.addEventListener("click", function () {
+            music.play()
+                .then(() => {
+                    console.log("Musik berhasil diputar");
+                })
+                .catch(error => {
+                    console.log("Gagal memutar:", error);
+                });
+        });
+    </script>
+
+
+
+    <script src="java.js"></script>
+
+</body>
+</html>

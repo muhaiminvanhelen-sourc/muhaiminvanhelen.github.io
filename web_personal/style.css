@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: white;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+
+    background: #0a0a0a;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+
+    transition: opacity 1s ease;
+}
+
+.intro-content {
+    text-align: center;
+}
+
+
+/* Tulisan pertama */
+
+#welcome {
+    font-size: 70px;
+    letter-spacing: 10px;
+
+    opacity: 0;
+
+    animation: muncul 1.5s ease forwards;
+}
+
+
+/* Nama */
+
+#name {
+    font-size: 50px;
+    margin-top: 20px;
+
+    opacity: 0;
+
+    animation: muncul 1.5s ease forwards;
+    animation-delay: 1.5s;
+}
+
+
+/* Deskripsi */
+
+#description {
+    font-size: 20px;
+    margin-top: 15px;
+
+    color: #aaa;
+
+    opacity: 0;
+
+    animation: muncul 1.5s ease forwards;
+    animation-delay: 3s;
+}
+
+
+/* Animasi muncul */
+
+@keyframes muncul {
+
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================
+   MAIN WEBSITE
+========================= */
+
+#main-content {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    opacity: 0;
+
+    transition: opacity 1s ease;
+}
+
+#main-content h1 {
+    font-size: 50px;
+}
+
+#main-content p {
+    margin-top: 15px;
+    color: #aaa;
+}
+
+#enterBtn {
+    margin-top: 30px;
+
+    padding: 12px 35px;
+
+    background: transparent;
+    color: white;
+
+    border: 1px solid white;
+
+    font-size: 16px;
+    letter-spacing: 3px;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    animation: muncul 1.5s ease forwards;
+    animation-delay: 4s;
+
+    transition: 0.3s;
+}
+
+#enterBtn:hover {
+    background: white;
+    color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: white;
+}
+
+
+/* =====================
+   INTRO
+===================== */
+
+.intro {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    background: #0a0a0a;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    transition: opacity 1s ease;
+}
+
+.intro-content h1 {
+    font-size: 70px;
+    letter-spacing: 10px;
+}
+
+.intro-content h2 {
+    font-size: 45px;
+    margin-top: 15px;
+}
+
+.intro-content p {
+    margin-top: 10px;
+    color: #aaa;
+}
+
+#enterBtn {
+    margin-top: 35px;
+    padding: 12px 40px;
+
+    background: transparent;
+    color: white;
+
+    border: 1px solid white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    letter-spacing: 3px;
+
+    transition: 0.3s;
+}
+
+#enterBtn:hover {
+    background: white;
+    color: black;
+}
+
+
+/* =====================
+   HOME
+===================== */
+
+.home {
+    min-height: 100vh;
+    padding: 30px 60px;
+
+    opacity: 0;
+
+    transition: opacity 1s ease;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    letter-spacing: 3px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #aaa;
+}
+
+.hero {
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 70px;
+    line-height: 1;
+}
+
+.hero p {
+    margin-top: 20px;
+    color: #aaa;
+    font-size: 18px;
+}
+
+/* button */
+.button {
+    display: inline-block;
+    padding: 12px 35px;
+    color: white;
+    background: black;
+    border: 1px solid white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: white;
+    color: black;
+}
+
+/* button enter animasi */
+#enterBtn {
+    margin-top: 35px;
+    padding: 12px 40px;
+
+    background: transparent;
+    color: white;
+
+    border: 1px solid white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    letter-spacing: 3px;
+
+    opacity: 0;
+    transform: translateY(30px);
+
+    animation: enterMuncul 1s ease forwards;
+    animation-delay: 4s;
+
+    transition: 0.3s;
+}
+
+@keyframes enterMuncul {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#enterBtn:hover {
+    background: white;
+    color: black;
+    transform: scale(1.05);
+}
